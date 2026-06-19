@@ -22,7 +22,6 @@ class Form(StatesGroup):
 specialists = {
     "spec_narko": "Нарколог",
     "spec_psycho": "Психотерапевт",
-    "spec_child": "Детский психиатр",
     "spec_psych": "Психолог",
     "spec_question": "Задать вопрос"
 }
@@ -33,10 +32,9 @@ def get_specialists_keyboard():
             InlineKeyboardButton(text="Нарколог", callback_data="spec_narko"),
             InlineKeyboardButton(text="Психотерапевт", callback_data="spec_psycho")
         ],
-        [
-            InlineKeyboardButton(text="Детский психиатр", callback_data="spec_child"),
-            InlineKeyboardButton(text="Психолог", callback_data="spec_psych")
-        ],
+       [
+                InlineKeyboardButton(text="Психолог", callback_data="spec_psych")
+            ],
         [
             InlineKeyboardButton(text="Задать вопрос", callback_data="spec_question")
         ]
